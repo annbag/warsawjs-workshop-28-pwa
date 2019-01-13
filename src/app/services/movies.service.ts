@@ -12,7 +12,7 @@ export class MoviesService {
   getMovies(): Movies {
     return MOVIES;
   }
-  getMoviesById(id: any): Movie {
+  getMoviesById(id: string): Movie {
     const movies = this.getMovies();
     return movies.find((movie) => {
       return movie.id === id;
