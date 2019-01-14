@@ -1,3 +1,3 @@
 self.addEventListener('install', () => {
-  confirm.log('')
+  confirm.log('[sw] install')
 })

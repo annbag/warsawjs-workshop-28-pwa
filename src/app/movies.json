@@ -1,20 +1,19 @@
-[
-  {
-    "id": "hdskjfhskjd",
-    "title": "Rocky 1",
-   "description": "aaa",
-   "imageUrl": "https://picsum.photos/g/200/300"
+[{
+    "id": "asd",
+    "title": "Forest Gump",
+    "description": "Historia życia Forresta, chłopca o niskim ilorazie inteligencji z niedowładem kończyn, który staje się miliarderem i bohaterem wojny w Wietnamie.",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY268_CR1,0,182,268_AL_.jpg"
   },
   {
-    "id": "hdskjfffffjd",
-    "title": "Rocky 2",
-   "description": "aaa",
-   "imageUrl": "https://picsum.photos/g/200/300"
+    "id": "fgh",
+    "title": "Nietykalni",
+    "description": "Sparaliżowany milioner zatrudnia do opieki młodego chłopaka z przedmieścia, który właśnie wyszedł z więzienia. ",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
   },
   {
-    "id": "kdkdkdasld",
-    "title": "Rocky 3",
-   "description": "aaa",
-   "imageUrl": "https://picsum.photos/g/200/300"
+    "id": "jkl",
+    "title": "Piękny umysł",
+    "description": "Geniusz matematyczny John Nash za wszelką cenę pragnie opracować teorię, dzięki której zostanie cenionym naukowcem. Przeszkodą staje się jego stopniowo rozwijająca choroba.",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BMzcwYWFkYzktZjAzNC00OGY1LWI4YTgtNzc5MzVjMDVmNjY0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
   }
 ]
