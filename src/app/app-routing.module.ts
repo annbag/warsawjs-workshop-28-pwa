@@ -11,8 +11,8 @@ const routes: Routes = [
   },
   {
     path: 'movies/:id',
-  component: PageMovieProfileComponent
-}
+    component: PageMovieProfileComponent
+  }
 ];
 
 @NgModule({
@@ -21,4 +21,5 @@ const routes: Routes = [
   })],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
