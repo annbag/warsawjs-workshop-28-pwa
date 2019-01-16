@@ -1,21 +1,23 @@
+import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+
 import { Movie } from 'src/app/interface/movie';
 import { Movies } from './../interface/movie';
-import { Injectable } from '@angular/core';
-import MOVIES from './../movies.json';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MoviesService {
-  constructor() {}
+  constructor(
+    private http: HttpClient
+  ) {}
 
-  getMovies(): Movies {
-    return MOVIES;
+  async getMovies(): Promise<Movies> {
+    return this.http.get<Movies>('/assets/movies.json').toPromise();
   }
-  getMoviesById(id: string): Movie {
-    const movies = this.getMovies();
-    return movies.find((movie) => {
-      return movie.id === id;
-    });
+
+  async getMoviesById(id: string): Promise<Movie> {
+    const movies = await this.getMovies();
+    return movies.find(movie => movie.id === id);
   }
 }

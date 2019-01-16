@@ -1,6 +1,7 @@
+import { Component, OnInit } from '@angular/core';
+
 import { Movie } from 'src/app/interface/movie';
 import { MoviesService } from 'src/app/services/movies.service';
-import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -9,17 +10,20 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./page-movie-profile.component.css']
 })
 export class PageMovieProfileComponent implements OnInit {
+
   movie: Movie = null;
+
   constructor(
     private route: ActivatedRoute,
-    private movies: MoviesService
+    private moviesService: MoviesService
   ) { }
-
   ngOnInit() {
-    const id = this.route.snapshot.params.id;
-    console.log({id});
+    this.setupMovie();
+  }
 
-    this.movie = this.movies.getMoviesById(id);
+  async setupMovie() {
+    const id = this.route.snapshot.params.id;
+    this.movie = await this.moviesService.getMoviesById(id);
   }
 
 }

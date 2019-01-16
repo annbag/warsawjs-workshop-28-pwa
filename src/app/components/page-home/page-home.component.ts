@@ -9,11 +9,17 @@ import { MoviesService } from 'src/app/services/movies.service';
 })
 export class PageHomeComponent implements OnInit {
 
-  movieList: Movies = null;
+  movies: Movies = null;
 
-  constructor(private movies: MoviesService) {}
+  constructor(
+    private moviesService: MoviesService
+  ) { }
 
   ngOnInit() {
-    this.movieList = this.movies.getMovies();
+    this.setupMovies();
+  }
+
+  async setupMovies() {
+    this.movies = await this.moviesService.getMovies();
   }
 }
