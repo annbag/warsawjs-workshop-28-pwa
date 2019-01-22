@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
-import { Movie } from 'src/app/interface/movie';
-import { Movies } from './../interface/movie';
+import { Movie } from 'src/app/interfaces/movies.inreface';
+import { Movies } from '../interfaces/movies.inreface';
 
 @Injectable({
   providedIn: 'root'

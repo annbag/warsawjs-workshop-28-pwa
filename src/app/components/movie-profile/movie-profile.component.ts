@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Movie } from 'src/app/interface/movie';
+import { Movie } from 'src/app/interfaces/movies.inreface';
 
 @Component({
   selector: 'app-movie-profile',

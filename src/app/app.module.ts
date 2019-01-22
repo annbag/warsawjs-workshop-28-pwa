@@ -10,6 +10,11 @@ import { MovieProfileComponent } from './components/movie-profile/movie-profile.
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { MovieListItemComponent } from './components/movie-list-item/movie-list-item.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+
+import { environment } from 'src/environments/environment.prod';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +29,9 @@ import { MovieListItemComponent } from './components/movie-list-item/movie-list-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ServiceWorkerModule.register('/sw.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
