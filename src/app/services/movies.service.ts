@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
-import { Movie } from 'src/app/interfaces/movies.inreface';
-import { Movies } from '../interfaces/movies.inreface';
+import { Movie } from 'src/app/interfaces/movies.interface';
+import { Movies } from '../interfaces/movies.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class MoviesService {
   ) {}
 
   async getMovies(): Promise<Movies> {
-    return this.http.get<Movies>('/assets/movies.json').toPromise();
+    return this.http.get<Movies>('../assets/movies.json').toPromise();
   }
 
   async getMoviesById(id: string): Promise<Movie> {

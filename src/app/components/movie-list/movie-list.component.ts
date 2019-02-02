@@ -1,4 +1,4 @@
-import { Movies } from '../../interfaces/movies.inreface';
+import { Movies } from '../../interfaces/movies.interface';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
